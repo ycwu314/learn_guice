@@ -14,8 +14,6 @@ import org.junit.runner.RunWith;
 
 import java.util.Calendar;
 
-;
-
 /**
  * Created by ycwu on 2017/9/20.
  */
