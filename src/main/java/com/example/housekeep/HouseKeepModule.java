@@ -9,6 +9,8 @@ import com.google.inject.matcher.Matchers;
 public class HouseKeepModule extends AbstractModule {
     @Override
     protected void configure() {
+        // bindInterceptor(clazz matcher, method matcher, interceptor)
+        // if the interceptor need injection, use requestInjection(interceptor);
         bindInterceptor(Matchers.any(), Matchers.annotatedWith(Weekend.class), new WeekendInterceptor());
     }
 }
